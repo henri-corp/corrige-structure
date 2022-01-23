@@ -1,0 +1,166 @@
+{
+  "message": "Vous êtes enseignant et vous devez décider si vous allez bien noter vos étudiants.",
+  "prompt": "Allez-vous leur mettre une bonne note",
+  "choice": [
+    {
+      "name": "Oui",
+      "message": "Les étudiants attendent les notes, combien allez-vous leur mettre ?",
+      "choice": [
+        {
+          "name": "entre 13 et 14",
+          "message": "Les étudiants pensaient avoir plus, ils sont un peu déçus mais tant pis pour eux !",
+          "feeling": "sad"
+        },
+        {
+          "name": "entre 16 et 18",
+          "message": "Tout le monde est content, tout le monde a une bonne note c'est formidable.",
+          "feeling": "happy"
+        },
+        {
+          "name": "20",
+          "message": "Les étudiants sont super content, même s'ils sont un peu suspicieux quant à votre façon de noter.",
+          "choice": [
+            {
+              "message": "Néanmoins, le chargé de formation, Dominique vient vous voir et vous demande si vous avez bien transmis les notes.",
+              "choice": [
+                {
+                  "name": "Vous vous rappelez que c'est important et vous corrigez les notes de tout le monde en urgence et les envoyez à Dominique."
+                },
+                {
+                  "name": "Vous décidez de l'attaquer",
+                  "fight": {
+                    "opponents": [
+                      {
+                        "name": "Dominique le Grincheux",
+                        "hp": 19,
+                        "atk": 4,
+                        "def": 15,
+                        "photo": "https://media-exp1.licdn.com/dms/image/C5603AQGzs1iojv2Ytg/profile-displayphoto-shrink_800_800/0/1639149377333?e=1648684800&v=beta&t=VyUkW2wIzcWPgfFDAcOAz4SzXJrtKyg3Yj8_YZh-T8M"
+                      }
+                    ],
+                    "success": 0,
+                    "failure": 1
+                  },
+                  "choice": [
+                    {
+                      "name": "success",
+                      "message": "vous vous êtes imposé et Dominique n'a pas d'autre choix que de vous respecter. Mais Elvia vient le défendre...",
+                      "fight": {
+                        "opponents": [
+                          {
+                            "name": "Elvia la Débordée",
+                            "hp": 40,
+                            "atk": 9,
+                            "def": 14,
+                            "photo": "https://media-exp1.licdn.com/dms/image/C4D03AQHF_R7FmBiruQ/profile-displayphoto-shrink_800_800/0/1588766749598?e=1648684800&v=beta&t=PlUQa5GQEsx2mnp4ueG4UQ5pSRm3GaAKvSyfSPl4uvA"
+                          }
+                        ],
+                        "success": 0,
+                        "failure": 1
+                      },
+                      "choice": [
+                        {
+                          "name": "success",
+                          "message": "Tout le monde a eu 20, tout le monde est content ! Par contre vous ne serez certainement plus prof l'an prochain.",
+                          "feeling": "happy"
+                        },
+                        {
+                          "name": "failure",
+                          "message": "Elvia vous a agrafée la main au clavier et ne vous dégrafera pas tant que vous n'aurez pas fini de corriger. vous passez une nuit dessus, et finalement vous rentrez chez vous.",
+                          "feeling": "sad"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "failure",
+                      "message": "Dominique vous a remis à votre place, vous corrigez les copies, et vous savez qu'il ne vous rappellera pas pour donner des cours l'an prochain.",
+                      "feeling": "sad"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Non",
+      "message": "Vous décidez de leur mettre à peine 11.",
+      "fight": {
+        "message": "3 étudiants mécontents viennent vous affronter. Lequel allez vous affronter ?",
+        "opponents": [
+          {
+            "name": "Max le Nonchalant",
+            "hp": 19,
+            "atk": 4,
+            "def": 12,
+            "photo": "https://media-exp1.licdn.com/dms/image/C4E03AQHxrIYj0abv0w/profile-displayphoto-shrink_800_800/0/1614875584303?e=1648684800&v=beta&t=SHc77rGIhlPYY3grVJBwfk20vOm2pE6i5wSo63bqsOM"
+          },
+          {
+            "name": "Loïc le Résigné",
+            "hp": 20,
+            "atk": 8,
+            "def": 8,
+            "photo": "https://media-exp1.licdn.com/dms/image/C5603AQE9MoOo5sQVIw/profile-displayphoto-shrink_800_800/0/1611491248071?e=1648684800&v=beta&t=d1uR_tHSzvOl3rpo3BZzx2vJ9223uGAE4zVf-fDVGyk"
+          },
+          {
+            "name": "Yohan le Démotivé",
+            "hp": 18,
+            "atk": 5,
+            "def": 14,
+            "photo": "https://media-exp1.licdn.com/dms/image/C5603AQF-_bTvyd3_1A/profile-displayphoto-shrink_800_800/0/1611595303597?e=1648684800&v=beta&t=C51jFCoHoC4fPqnUP_xXOCLUwROJ5uSy3BS_loSJ_j8"
+          }
+        ],
+        "success": 0,
+        "failure": 1
+      },
+      "choice": [
+        {
+          "message": "Vous avez su imposer votre volonté sur vos étudiants, ils se décident à accepter leur notes et repartent en pestant contre vous.",
+          "fight": {
+            "message": "3 étudiants mécontents viennent vous affronter. Lequel allez vous affronter ?",
+            "opponents": [
+              {
+                "name": "Léa la Stressée",
+                "hp": 22,
+                "atk": 6,
+                "def": 12,
+                "photo": "https://media-exp1.licdn.com/dms/image/C4D35AQGabPOhGNGP-A/profile-framedphoto-shrink_800_800/0/1609940459767?e=1643061600&v=beta&t=wDzzJ-8gHvYoACg3B29MCcUZNispLb53Zy-cgaUg8k0"
+              },
+              {
+                "name": "Roxane la Dépitée",
+                "hp": 20,
+                "atk": 8,
+                "def": 8
+              },
+              {
+                "name": "Arthur L'inattentif",
+                "hp": 15,
+                "atk": 5,
+                "def": 14,
+                "photo": "https://media-exp1.licdn.com/dms/image/C5635AQEWO3TBfr9gqg/profile-framedphoto-shrink_800_800/0/1613647139126?e=1643061600&v=beta&t=sfh3U-zxEiWAIc65i_kTtnwKsaBTkVjCoTdbWRnGsvw"
+              }
+            ],
+            "success": 0,
+            "failure": 1
+          },
+          "choice": [
+            {
+              "message": "Vous avez tué tous vos étudiants, félicitations !",
+              "feeling": "victory"
+            },
+            {
+              "message": "Le deuxième groupe de pleurnichards a eu raison de vous, vous vous résignez donc à corriger à leur juste valeur leur copies.",
+              "feeling": "cry"
+            }
+          ]
+        },
+        {
+          "message": "Leurs pleurs incessants ont eu raison de vous et vous avez décidé de leur donner 2 points de plus, de toute façon on s'en fout personne ne regarde le détail des notes.\n Vous êtes beaucoup trop gentil avec eux.",
+          "feeling": "cry"
+        }
+      ]
+    }
+  ]
+}
